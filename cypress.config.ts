@@ -34,6 +34,6 @@ export default defineConfig({
     baseUrl: "https://opensource-demo.orangehrmlive.com/web/index.php",
     specPattern: "**/e2e/*.ts",
   },
-  defaultCommandTimeout: 20000,
+  defaultCommandTimeout: 5000,
   responseTimeout: 120000,
 });
