@@ -1,6 +1,6 @@
 class BasePage {
-    minNumber: number = 0;
-	maxNumber: number = 1000000000;
+    minNumber = 0;
+	maxNumber = 1000_000_000;
 
     navigateTo(url: string) {
         cy.visit(url);

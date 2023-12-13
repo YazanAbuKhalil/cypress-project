@@ -1,11 +1,11 @@
 import BasePage from "./BasePage";
 
 class LoginPage extends BasePage {
-    usernameInput: string = "[name='username']";
-    passwordInput: string = "[name='password']";
-    loginButton: string = "[type='submit']";
-    APIUrl: string = "/api/v1/login";
-    path: string = "/";
+    usernameInput = "[name='username']";
+    passwordInput = "[name='password']";
+    loginButton = "[type='submit']";
+    APIUrl = "/api/v1/login";
+    path = "/";
 
     loginAPI() {
         return cy.request({
