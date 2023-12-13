@@ -10,5 +10,5 @@ class EmployeeListPage extends BasePage {
         this.clickElement(this.searchButton);
     }
 }
-
 export = new EmployeeListPage();
+

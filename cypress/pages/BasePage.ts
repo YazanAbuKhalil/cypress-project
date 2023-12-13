@@ -30,11 +30,8 @@ class BasePage {
         return `test_username_${this.generateRandomNumber()}`;
     }
 
-
     getRandomPassword(): string {
         return `test_Automation_${this.generateRandomNumber()}`;
     }
-
 }
-
 export = BasePage;
