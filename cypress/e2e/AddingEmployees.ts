@@ -9,7 +9,7 @@ describe("Adding New Employee Functionality", () => {
   describe("Add New Employee With Admin User", () => {
     beforeEach(() => {
       LoginPage.navigateTo(LoginPage.path);
-      LoginPage.login(Cypress.env("username"), Cypress.env("password"));
+      LoginPage.login();
     });
 
     it("As admin I should add a new employee succussfuly", () => {

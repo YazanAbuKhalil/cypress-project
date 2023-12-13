@@ -18,7 +18,7 @@ class LoginPage extends BasePage {
         })
     }
 
-    login(username: string, password: string) {
+    login(username: string = Cypress.env("username"), password: string = Cypress.env("password")) {
         this.typeInput(this.usernameInput, username);
         this.typeInput(this.passwordInput, password);
         this.clickElement(this.loginButton);
