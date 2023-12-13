@@ -6,4 +6,5 @@ class DashBoardPage extends BasePage {
     dropdownMenue = ".oxd-userdropdown-tab";
     logoutButton = ".oxd-dropdown-menu > :last-child";
 }
+
 export = new DashBoardPage();

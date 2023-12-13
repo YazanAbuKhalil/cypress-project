@@ -24,4 +24,5 @@ class LoginPage extends BasePage {
         this.clickElement(this.loginButton);
     }
 }
+
 export = new LoginPage();

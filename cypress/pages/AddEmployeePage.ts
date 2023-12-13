@@ -31,4 +31,5 @@ class AddEmployeePage extends BasePage {
         this.clickElement(this.saveButton);
     }
 }
+
 export = new AddEmployeePage();
