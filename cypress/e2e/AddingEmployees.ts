@@ -48,7 +48,7 @@ describe("Adding New Employee Functionality", () => {
   });
 
   describe("New Employee Login", () => {
-    it("should login credentials for new employee to be valid", () => {
+    it("shoul new employee added to the system can login with with valid credentials", () => {
       cy.task("getEmployee").then((employeeInfo: any) => {
         LoginPage.navigateTo("/");
         LoginPage.login(employeeInfo.username, employeeInfo.password);
