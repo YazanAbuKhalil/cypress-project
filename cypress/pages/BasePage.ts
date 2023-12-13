@@ -6,7 +6,7 @@ class BasePage {
         cy.visit(url);
     }
 
-    currentPath() {
+    currentPath = () => {
         return cy.url();
     }
     
