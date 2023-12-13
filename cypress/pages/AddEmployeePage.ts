@@ -9,7 +9,7 @@ class AddEmployeePage extends BasePage {
     usernameInput: string = ":nth-child(4) > .oxd-grid-2 > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input";
     passwordInput: string = ".user-password-cell > .oxd-input-group > :nth-child(2) > .oxd-input";
     confirmPasswordInput: string = ".oxd-grid-2 > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input";
-    AddProfileImageButton: string = ".oxd-file-div .oxd-icon-button"
+    addProfileImageButton: string = ".oxd-file-div .oxd-icon-button"
     fileInput: string = "[type='file']";
     saveButton: string = ".oxd-form-actions [type='submit']";
     employeeIdInput: string = ".oxd-grid-2 .oxd-grid-item input";
