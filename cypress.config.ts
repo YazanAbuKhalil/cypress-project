@@ -35,5 +35,4 @@ export default defineConfig({
     specPattern: "**/e2e/*.ts",
   },
   defaultCommandTimeout: 5000,
-  responseTimeout: 120000,
 });
