@@ -12,7 +12,7 @@ describe("Adding New Employee Functionality", () => {
       LoginPage.login();
     });
 
-    it("As admin I should add a new employee succussfuly", () => {
+    it("should admin can adding a new employee to the system succussfully", () => {
       LoginPage.navigateTo(DashBoardPage.path);
       DashBoardPage.clickElement(DashBoardPage.PIMTab);
       PIMPage.clickElement(PIMPage.AddEmployeeTab);
