@@ -1,12 +1,8 @@
 import { defineConfig } from "cypress";
 import LoginPage = require("./cypress/pages/LoginPage");
+import {employee} from "./cypress/utils/types/employeeTypes";
 
 let employeeId: string;
-type employee = {
-  id: string,
-  username: string,
-  password: string
-};
 let employeeInfo: employee = {
   id: "",
   username: "",
