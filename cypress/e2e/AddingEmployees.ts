@@ -15,7 +15,7 @@ describe("Adding New Employee Functionality", () => {
     it("should admin can adding a new employee to the system succussfully", () => {
       LoginPage.navigateTo(DashBoardPage.path);
       DashBoardPage.clickElement(DashBoardPage.PIMTab);
-      PIMPage.clickElement(PIMPage.AddEmployeeTab);
+      PIMPage.clickElement(PIMPage.addEmployeeTab);
       AddEmployeePage.getElement(AddEmployeePage.employeeIdInput)
         .invoke("val")
         .then((id) => cy.task("setEmployeeId", id));
@@ -50,7 +50,7 @@ describe("Adding New Employee Functionality", () => {
   describe("New Employee Login", () => {
     it("shoul new employee added to the system can login with with valid credentials", () => {
       cy.task("getEmployee").then((employeeInfo: any) => {
-        LoginPage.navigateTo("/");
+        LoginPage.navigateTo(LoginPage.path);
         LoginPage.login(employeeInfo.username, employeeInfo.password);
         cy.url().should("contain", DashBoardPage.path);
       });
